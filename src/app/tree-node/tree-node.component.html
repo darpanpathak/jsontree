@@ -1,0 +1,12 @@
+<ul>
+    <li *ngFor="let item of nodes">
+        <!-- if the type is string -->
+        <span *ngIf="premitives.includes(item.type) || item.val === null">{{item.key}} : {{item.val + ''}}</span>
+
+        <span *ngIf="nonpremitives.includes(item.type) && item.val !== null"> 
+            
+            <app-tree-view [data]="item.val" [title]="item.key" className="nested" [keyLength]="item.keyLength"></app-tree-view>
+        </span>
+
+    </li>
+</ul>

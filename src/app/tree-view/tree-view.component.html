@@ -1,0 +1,10 @@
+<ul [ngClass]="className? className : 'mainul'">
+
+    <li (click)="toggleView($event)">
+       <span>{{isVisible ? '-' : '+'}}</span> {{title ? title : key}} ({{keyLength}})
+
+        <ng-container *ngIf="isVisible">
+            <app-tree-node [nodes]="arr"></app-tree-node>
+        </ng-container>
+    </li>
+</ul>

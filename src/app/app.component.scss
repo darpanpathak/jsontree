@@ -1,0 +1,41 @@
+.json-viewer {
+  display: flex;
+
+  .half-containers {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #000;
+  }
+
+  textarea {
+    min-height: 600px;
+    width: 100%;
+  }
+}
+
+.btn-editor {
+  width: 26px;
+  height: 26px;
+  margin: 2px;
+  padding: 0;
+  border-radius: 2px;
+  border: 1px solid black;
+  color: #fff;
+  opacity: .8;
+  font-family: arial, sans-serif;
+}
+
+.btn-menu {
+  background-color: #2c3e50;
+  border-bottom: 1px solid #2c3e50;
+}
+
+.btn-format {
+  background: transparent url('../assets/images/jsoneditor-icons.svg');
+  background-position: -72px -120px;
+}
+
+.btn-compact {
+  background: transparent url('../assets/images/jsoneditor-icons.svg');
+  background-position: -72px -96px;
+}
